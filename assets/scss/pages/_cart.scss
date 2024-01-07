@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  width: 100%;
+  min-height: 85px;
+  border: 1px solid #ebebeb;
+  background-color: white;
+  position: static !important;
+
+  .navbarCnt {
+    width: 90%;
+
+    .navUl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      gap: 5px;
+
+      li {
+        a {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #a4a3a3 !important;
+          transition: 0.5s ease;
+
+          &:hover {
+            color: #000 !important;
+          }
+        }
+      }
+
+      .pages {
+        position: relative;
+        transition: 0.5s ease;
+
+        &:hover {
+          transition: 0.5s ease;
+
+          .pagesDropdown {
+            display: block;
+            position: absolute;
+            top: 55px;
+            background-color: #fff;
+            min-width: 150px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 10px;
+            transition: 0.5s ease;
+          }
+        }
+
+        .pagesDropdown {
+          display: none;
+
+          p {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 30px;
+            font-family: poppins, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 34px;
+            color: #a4a3a3 !important;
+            border-top: 1px solid #aaaaaa;
+            transition: 0.4s;
+            cursor: pointer;
+
+            &:hover {
+              color: #000 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .searchUserCartCnt {
+      min-height: 85px;
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      a {
+        min-height: 85px;
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-right: 1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+        i {
+          font-size: 20px;
+          color: #000;
+          font-weight: 400;
+        }
+      }
+
+      .searchInp {
+        min-height: 85px;
+        width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #ffffff;
+        border-right: 1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+
+        #searchInp {
+          border: none;
+          background-color: transparent;
+          width: 68%;
+          min-height: 85px;
+
+          &::placeholder {
+            color: #787878;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+
+        #searchBtn {
+          min-height: 85px;
+          width: 20%;
+          border: none;
+          background-color: transparent;
+          color: #787878;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+
+#cartProdSec {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #cartProdCnt {
+    width: 88%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .cartProd {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+
+      img {
+        width: 20%;
+      }
+
+      h2 {
+        font-family: Ubuntu, sans-serif;
+        font-size: 29px;
+        color: #000000;
+        line-height: 39px;
+        font-weight: 600;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 20%;
+        border: none;
+        background-color: #0315ff;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 600;
+        font-family: poppins;
+        transition: 0.5s;
+
+        &:hover {
+          border: 1px solid #0315ff;
+          color: #0315ff;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+footer {
+  min-height: 117px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+
+  p {
+    font-size: 16px;
+    color: #787878;
+    line-height: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+
+    span {
+      color: #000;
+      cursor: pointer;
+    }
+  }
+}

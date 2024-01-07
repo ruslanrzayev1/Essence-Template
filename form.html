@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essence Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navBar">
+        <div class="container-fluid navbarCnt">
+          <a class="navbar-brand" href="/home.html"
+            ><img src="./assets/images/logo (15).png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navUl">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item pages">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pages <i class="fa-solid fa-angle-up fa-rotate-180"></i
+                ></a>
+                <div class="pagesDropdown">
+                  <p>Home</p>
+                  <p>Shop</p>
+                  <p>Product Details</p>
+                  <p>Checkout</p>
+                  <p>Blog</p>
+                  <p>Single Blog</p>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="searchUserCartCnt">
+              <div class="searchInp">
+                <button id="searchBtn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  type="text"
+                  id="searchInp"
+                  placeholder="Type for search"
+                />
+              </div>
+
+              <a href=""><i class="fa-light fa-heart"></i></a>
+
+              <a href="/form.html"><i class="fa-sharp fa-light fa-user"></i></a>
+
+              <a href="/cart.html"
+                ><i class="fa-sharp fa-light fa-basket-shopping-simple"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="mySec">
+      <div class="loginForm">
+        <div class="loginFormTxt">
+          <h2>Create Ur Account</h2>
+        </div>
+      </div>
+      <form id="myForm1">
+        <div class="input-group flex-nowrap inputcnt">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Name"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+            id="inpName"
+          />
+        </div>
+        <div class="input-group flex-nowrap inputcnt">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Surname"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+            id="inpSurname"
+          />
+        </div>
+        <div class="input-group flex-nowrap inputcnt">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Age"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+            id="inpAge"
+          />
+        </div>
+        <div class="mb-3 inputcnt">
+          <input
+            type="email"
+            class="form-control inpEmail"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-info">Create</button>
+      </form>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/form.js"></script>
+  </body>
+</html>

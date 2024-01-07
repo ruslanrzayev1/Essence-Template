@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  width: 100%;
+  min-height: 85px;
+  border: 1px solid #ebebeb;
+  background-color: white;
+  position: static !important;
+}
+.navBar .navbarCnt {
+  width: 90%;
+}
+.navBar .navbarCnt .navUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  gap: 5px;
+}
+.navBar .navbarCnt .navUl li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  transition: 0.5s ease;
+}
+.navBar .navbarCnt .navUl li a:hover {
+  color: #000 !important;
+}
+.navBar .navbarCnt .navUl .pages {
+  position: relative;
+  transition: 0.5s ease;
+}
+.navBar .navbarCnt .navUl .pages:hover {
+  transition: 0.5s ease;
+}
+.navBar .navbarCnt .navUl .pages:hover .pagesDropdown {
+  display: block;
+  position: absolute;
+  top: 55px;
+  background-color: #fff;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  transition: 0.5s ease;
+}
+.navBar .navbarCnt .navUl .pages .pagesDropdown {
+  display: none;
+}
+.navBar .navbarCnt .navUl .pages .pagesDropdown p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 30px;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  border-top: 1px solid #aaaaaa;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.navBar .navbarCnt .navUl .pages .pagesDropdown p:hover {
+  color: #000 !important;
+}
+.navBar .navbarCnt .searchUserCartCnt {
+  min-height: 85px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.navBar .navbarCnt .searchUserCartCnt a {
+  min-height: 85px;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+.navBar .navbarCnt .searchUserCartCnt a i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+.navBar .navbarCnt .searchUserCartCnt .searchInp {
+  min-height: 85px;
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+.navBar .navbarCnt .searchUserCartCnt .searchInp #searchInp {
+  border: none;
+  background-color: transparent;
+  width: 68%;
+  min-height: 85px;
+}
+.navBar .navbarCnt .searchUserCartCnt .searchInp #searchInp::placeholder {
+  color: #787878;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navBar .navbarCnt .searchUserCartCnt .searchInp #searchBtn {
+  min-height: 85px;
+  width: 20%;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#cartProdSec {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cartProdSec #cartProdCnt {
+  width: 88%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#cartProdSec #cartProdCnt .cartProd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+#cartProdSec #cartProdCnt .cartProd img {
+  width: 20%;
+}
+#cartProdSec #cartProdCnt .cartProd h2 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 29px;
+  color: #000000;
+  line-height: 39px;
+  font-weight: 600;
+}
+#cartProdSec #cartProdCnt .cartProd button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 20%;
+  border: none;
+  background-color: #0315ff;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: poppins;
+  transition: 0.5s;
+}
+#cartProdSec #cartProdCnt .cartProd button:hover {
+  border: 1px solid #0315ff;
+  color: #0315ff;
+  background-color: white;
+}
+
+footer {
+  min-height: 117px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+footer p {
+  font-size: 16px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+footer p span {
+  color: #000;
+  cursor: pointer;
+}
